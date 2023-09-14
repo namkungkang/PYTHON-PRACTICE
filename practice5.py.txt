@@ -1,0 +1,49 @@
+x=[1,2,3]
+x[0]
+x[1]
+x[2]
+
+
+y=x
+y[0]=100
+y
+z=x[:]
+z[0]=-1
+z
+x
+#메모리값만 변환해준다 z =x[:]
+
+
+#
+n_list =[13,22,45,66,77,88]
+print(n_list)
+del n_list[3]
+print(n_list)
+13 in n_list
+55 in n_list
+if (22 in n_list) :
+    n_list.remove(22)
+    print(n_list)
+    del n_list[2]
+    print(n_list)
+
+n1 =list(range(10))
+print(n1)
+n=n1.pop()
+print(n)
+print(n1)  
+
+prime_list = list(range(1,11))
+print(prime_list)
+
+prime_list.append(11)
+print(prime_list)
+ 
+pop은 인덱스값[]을 넣고 
+remove 는 벨류값()을 넣는다.
+ 
+list에서 delete 는 인덱스 사용
+remove 는 벨류값을 이용
+
+유니코드...
+
