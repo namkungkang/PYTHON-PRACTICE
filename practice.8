@@ -1,0 +1,72 @@
+#함수
+# def multiplies(n,m) :
+#     tup = ()
+#     for i in range(1, m+1) :
+#         tup = tup + (i*n,)
+   
+#     return tup
+
+# r1,r2,r3,r4 = multiplies(3,4)
+# print(r1,r2,r3,r4)
+# r1,r2,r3,r4,r5 = multiplies(2,5)
+# print(r1,r2,r3,r4,r5)
+
+#전역함수 이용      
+# def func(shape, width =1, height=1, radius=1):
+#     if shape == 0 :
+#         return width + height
+#     if shape == 1 :
+#         return 3.14 * radius ** 2
+# print('rect area =',func(0,width=10,height=3))
+# print('circe area =',func(1, radius = 3))
+
+# def foo(*args):
+   
+# print('3개의 인자: ',args)
+
+# 전달인자    
+# foo(10,20,30)
+# def sum_nums(*numbers) :
+#     result=0
+#     for n in numbers:
+#         result += n
+#     return result
+
+# print('합계 : ',sum_nums(10,20,30)) 
+
+# 다음 크리스마스까지 계산하기
+# import datetime as dt
+# today = dt.date.today()
+# print('오늘은 {}년 {}월 {}일입니다.'.format(today.year, today.month, today.day))
+# xMas = dt.datetime(2024,1,1)
+# time_gap= xMas - dt.datetime.now()
+# print('다음 크리스마스 까지는 {}일 {}시간 남았습니다'.format(\
+# time_gap.days,time_gap.seconds // 3600))
+
+#로또 번호 만들기
+# import random as rd
+# lotto_list = list(range(1,46))
+# lotto_list = rd.sample(lotto_list,6)
+# lotto_list.sort()
+# print('로또 번호 :',lotto_list)
+
+#tkinter
+
+# from tkinter import *
+
+# def change_label() :
+#     if label.cget('text') == '헬로 파이썬':
+#         label.config(text = '안녕 파이썬')
+#         label.config(bg ='cyan')
+#     else:
+#         label.config(text = '헬로 파이썬')
+#         label.config(bg=='yellow')
+        
+# window = Tk()
+# label = Label(window, text = '헬로 파이썬', bg = 'yellow')
+# label.pack()
+# btn = Button(window, text = '클릭하면 문자가 변경됨', fg = 'blue', command = change_label)
+# btn.pack()
+
+
+# window.mainloop()
