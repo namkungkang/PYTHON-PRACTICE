@@ -1,0 +1,67 @@
+#파이썬의 리스트는 'lion','tiger','cat','dog'등의 항목을 원소로 가질 수 있다
+#많은 메소드를 사용할 수 있다 
+# animal = ['lion', 'tiger', 'cat', 'dog']
+# animal.sort()
+# animal
+# animal.append('rabbit')
+# animal
+# animal.reverse()
+# animal
+# s = animal.pop()
+# s
+# s.upper()
+# s.find('a')
+
+
+# n=200
+# id(n)
+# n+100
+# n.__add__(100) #위와 같은 의미
+
+#절차적 프로그래밍은 서로 상호작용하지않는다
+#객체 지향 프로그래밍은 양방향성을 띈다
+
+#캡슐화
+# class Cat :
+#     def __init__(self,name,age) :
+#         self.name = name
+#         self.age = age
+    
+#     def __str__(self) :
+#         return 'Cat(name='+self.name+',age='+str(self.age)+')'
+    
+# nabi = Cat('나비',3)
+# print(nabi)
+# nabi.age = 4
+# nabi.age = -5
+# print(nabi)
+
+# list_a = [10,20,30]
+# list_b = [10,20,30]
+
+# if list_a == list_b:
+#     print('list_a == list_b')
+# else:
+#     print('list_a != not list_b')
+
+# class Vector2D :
+#     def __init__(self,x,y) :
+#         self.x = x
+#         self.y = y
+#     def __str__(self) :
+#         return "({}, {})".format(self.x, self.y)
+#     def add(self,other) :
+#         return Vector2D(self.x + other.x, self.y + other.y)
+         
+# v1 = Vector2D(30,40)
+# v2 = Vector2D(10,20)
+# v3 = v1.add(v2)
+# print('v1 + v2 = ', v3)        
+
+#참조
+# n = 100
+# id(n)
+# n = n + 1
+# id(n)
+
+print(type(int))
