@@ -1,0 +1,136 @@
+# #순차문
+# num = 100
+# print(num)
+# num = num + 100
+# print(num)
+# num = num + 100
+# print(num)
+
+#조건문
+# x = int(input('나이를 입력하세요 : '))
+
+# if  x>=20 :
+#     print('할인 X ')
+# else :
+#     print('청소년 할인')
+    
+# lab(1)
+# game_score = 1300
+# print('게임스코어 :',game_score)
+# if game_score >=1000 :
+#     print('당신은 고수입니다.')
+# else :
+#     print('당신은 하수입니다')
+
+#lab(2)
+# num_a = 300
+# num_b = 300
+
+# if num_a == num_b :
+#     print('두 값이 일치합니다.')
+# else :
+#     print('두 값이 일치하지 않습니다')
+
+#(1)
+# number = int(input('정수를 입력하세요 :'))
+# if number % 3 == 0:
+#     print(number,'은(는) 3의 배수 입니다.')
+# else :
+#     print(number,'은(는) 3의 배수가 아닙니다')
+    
+#(2)
+# number = int(input('정수를 입력하세요 :'))
+# if number % 3 == 0 and number % 5 ==0:
+#     print(number, '은(는) 3의 배수 이면서 5의 배수입니다.')
+# else :
+#     print('아닙니다.')
+    
+#lab(3)
+# num = int(input('정수를 입력하세요 :'))
+# print('n =',num)
+# if num % 2 == 0 :
+#     print(num,'은(는) 짝수입니다.')
+# else :
+#     print(num,'은(는) 홀수입니다.')
+
+#if-else lab(4)
+# score = int(input('게임 점수를 입력하시오 :'))
+# print('game_score = ',score)
+# if score >=1000 :
+#     print('고수')
+# else :
+#     print('하수')    
+# #lab(5)
+# age = int(input('당신은 성인인가요(성인이면 1, 미성년자이면 0) :')) 
+# if age == 1 :
+#     print('당신은 성인입니다.')
+# else :
+#     print('당신은 미성년자입니다.')
+
+#lab(6)
+# age = int(input('당신은 성인인가요(성인이면 1, 미성년자이면 0) :')) 
+# marry = int(input('결혼은 하셨나요(기혼이면 1, 미혼이면 0) :')) 
+
+# if age == 1 and marry == 1:
+#     print('당신은 결혼한 성인입니다.')
+# elif age == 1 and marry ==0 :
+#     print('당신은 결혼하지 않은 성인입니다.')
+# elif age == 0 and marry == 1 :
+#     print('당신은 결혼한 미성년자입니다.')
+# elif age == 0 and marry == 0 :
+#     print('당신은 결혼하지 않은 미성년자입니다.')    
+# else : 
+#     print('알맞게 입력 바랍니다.')
+    
+# #for문
+# list(range(2,101,2))
+# list(range(1,101,2))
+# list(range(-99,0,1))
+
+# for range문
+# sum = 0
+# for i in range(1,11):
+#     sum = sum + i
+#     print('i = {}, s = {}'.format(i,sum) )
+
+# 합계문(팩토리얼문)
+# number = int(input('펙토리얼을 구할 수를 입력하세요 :'))
+# s = 1
+# for i in range(1,number+1) :
+#     s = s * i
+# print('1부터 {}까지의 합은  :{}'.format(number,s))
+
+#for문과 list
+# print('1에서 100까지의 합 : ', sum(range(1,101)))
+
+#삼각형 만들기
+# n = 5
+# for i in range(n) :
+#     print(' '*(n-i),end = '')
+#     print('+' * (2*i+1))
+    
+# n = 5
+# for i in range(n):
+#     print(' ' * (n-i-1),end ='') 
+#     print('+' * (i*2+1))
+    
+#소수 만들기
+# primes = []
+
+# for n in range(2,201) :
+#   is_prime = True
+  
+#   for num in range(2,n) :
+#      if n % num == 0:
+#         is_prime = False
+
+#   if is_prime:
+#         primes.append(n)
+        
+# print(primes)  
+
+select = None
+while select not in ['가위','바위','보'] :
+    select = input('가위,바위,보 중에서 선택하세요 :')
+
+print('선택한 값은', select)     
