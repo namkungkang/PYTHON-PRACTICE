@@ -1,0 +1,68 @@
+#클래스 이해하기
+
+# class JSS :
+#     def __init__(self):
+#         self.name = input('이름 :')
+#         self.age = input('나이 :')
+        
+#     def show(self):
+#         print('나의 이름은{}이고, 나이는{}이다'.format(self.name,self.age))
+
+# class JSS2(JSS):
+#     pass
+
+# a = JSS2()
+# a.show()
+
+#문제1 클래스를 이용하여 국적과 성별을 알아내시오
+
+# class Person:
+#     def __init__(self,country,sex) :
+#         self.country = country
+#         self.sex = sex
+
+#     def show(self) :
+#         print('저의 나라는 {} 이고, 성별은 {} 입니다. '.format(self.country,self.sex))
+
+
+# b = Person('호주','남자')
+# b.show()
+
+
+# class Student :
+#     def __init__(self):
+#         self.name = input('학생의 이름을 입력하세요 :')
+#         self.id = input('학생의 학번을 입력하세요 :')
+#         self.korean_quiz = input('학생의 국어 성적을 입력하세요 :')
+#         self.math_quiz = input('학생의 수학 성적을 입력하세요 :')
+#         self.science_quiz = input('학생의 과학 성적을 입력하세요 :')
+
+#     def show(self) :
+#         print('이름 : {}, 학번 : {}, 국어성적 : {}, 수학성적 : {}, 과학성적 : {}'.format(self.name,self.id,self.korean_quiz,self.math_quiz,self.science_quiz))
+# a = Student()        
+# a.show()
+        
+#클래스를 이용하여 몇학년 몇반 이름 을 출력하여라
+# class Student:
+#     def __init__(self) :
+#         self.grade = input('몇학년 :')
+#         self.gra = input('몇반 :')
+#         self.name = input('이름 :')
+#     def show(self) :
+#         print('저는 {}학년 {}반 {}입니다.'.format(self.grade,self.gra,self.name))
+
+# d = Student()
+# d.show()
+
+
+
+class Point :
+    def __init__(self,x,y):
+        self.x = x
+        self.y = y
+    def __add__(self,other) :
+        return Point(self.x + other.x, self.y + other.y)
+p1 = Point(1,2)
+p2 = Point(3,5)
+result = p1 + p2
+print(result.x,result.y)
